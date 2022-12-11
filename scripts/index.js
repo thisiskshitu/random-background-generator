@@ -9,8 +9,8 @@ const changeColor = () => {
   // console.log("Background color changed to: " + hexCode);
   // document.getElementById("heading").style.color = hexCode;
   // document.getElementById("flip-color-btn").style.color = hexCode;
-  document.getElementById("heading").style.border = "5px solid transparent";
-  document.getElementById("flip-color-btn").style.border = "5px solid transparent";
+  // document.getElementById("heading").style.border = "5px solid transparent";
+  // document.getElementById("flip-color-btn").style.border = "5px solid transparent";
   document.body.style.backgroundColor = hexCode;
 }
 
@@ -18,3 +18,11 @@ document.getElementById("flip-color-btn").addEventListener(
   "click",
   changeColor
 )
+
+function autoFlip() {
+  myInterval = setInterval(changeColor, 250);
+}
+
+function stopFlip() {
+  clearInterval(myInterval);
+}

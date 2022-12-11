@@ -2,6 +2,7 @@ html {
   position: fixed;
   height: 100%;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #top-left {
@@ -335,8 +337,9 @@ h1 {
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 25px;
-  border: 5px solid burlywood;
+  /* border: 5px solid burlywood; */
   transition: 0.25s;
+  user-select: none;
 }
 
 button {
@@ -356,4 +359,6 @@ button {
   font-family: "Segoe UI", sans-serif;
   border: 5px solid #000;
   transition: 0.25s;
+  margin: 5px;
+  user-select: none;
 }
