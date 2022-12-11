@@ -340,12 +340,13 @@ h1 {
   /* border: 5px solid burlywood; */
   transition: 0.25s;
   user-select: none;
+  margin-bottom: 10px;
 }
 
 button {
   text-align: center;
   border: transparent;
-  padding: 10px 30px;
+  padding: 5px 10px;
   font-size: 25px;
   border-radius: 10px;
   letter-spacing: 1px;
